@@ -53,4 +53,4 @@ autocmd filetype cpp nnoremap <F9> :w <bar> !g++ -std=c++17 -Wshadow -Wall -o %:
 autocmd filetype cpp nnoremap <F10> :!%:r<CR>
 
 " Automatic template for C++
-autocmd BufNewFile *.cpp execute "0r D:/CP/".input("Template name: ").".cpp"
+autocmd BufNewFile *.cpp execute "0r D:/CP/templates/".input("Template name: ").".cpp"
