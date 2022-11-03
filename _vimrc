@@ -40,6 +40,7 @@ call plug#begin('~/vimfiles/plugged')
 	 Plug 'octol/vim-cpp-enhanced-highlight'
 	 Plug 'vim-scripts/AutoComplPop'
 	 Plug 'jiangmiao/auto-pairs' 
+	 Plug 'voldikss/vim-floaterm'
 call plug#end()
 
 " Settings for CPP Syntax Highlighting plugin.
@@ -49,8 +50,11 @@ let g:cpp_class_decl_highlight = 1
 let g:cpp_posix_standard = 1
 let g:cpp_experimental_template_highlight = 1
 
+" Settings for floaterm plugin
+
+
 autocmd filetype cpp nnoremap <F9> :w <bar> !g++ -std=c++17 -Wshadow -Wall -o %:r % -O3 -Wno-unused-result -DLOCAL_MACHINE,--stack,268435456<CR>
 autocmd filetype cpp nnoremap <F10> :!%:r<CR>
 
 " Automatic template for C++
-autocmd BufNewFile *.cpp execute "0r D:/CP/templates/".input("Template name: ").".cpp"
+" autocmd BufNewFile *.cpp execute "0r D:/CP/templates/".input("Template name: ").".cpp"
