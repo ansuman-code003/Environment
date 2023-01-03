@@ -23,7 +23,9 @@ set signcolumn=yes
 set scrolloff=8
 set laststatus=2
 set mouse=a
-colorscheme codedark
+" Put monokai.vim file into color folder inside of vimfiles directory
+" Download monokai.vim from https://github.com/sickill/vim-monokai
+colorscheme monokai
 
 if has("gui_running")
   if has("gui_gtk2")
