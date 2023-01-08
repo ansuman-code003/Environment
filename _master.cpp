@@ -11,12 +11,15 @@ using namespace std;
 
 void test_case(){
 	/* Solve here! */		
+	
 }
 
 int main(){
 	fastio();
-	int test=1; //cin >> test;
-	while(test--) test_case();
+	int test=1; scanf("%d", &test);
+	for(int i=1; i<= test; i++){
+		//cout << "Case #" << i << ": ";
+		test_case();
+	}
 	return 0;	
 }
-
